@@ -1,0 +1,331 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto';
+}
+
+.header{
+    height: 70px;
+    width: 100%;
+    min-height: 70px;
+    background-color: #CE3A3A;
+    box-shadow: 1px 0px 10px rgba(0, 0, 0, 0.5);
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__img{
+    margin-left: 30px;
+}
+
+.header__menu{
+    margin-right: 50px;
+    position: relative;
+}
+
+.header__hamburger{
+    cursor: pointer;  
+    width: 40px;
+}
+
+.header__menu:hover .header__options{ 
+    display: block;
+}
+
+.header__options{
+    background-color: #CE3A3A;
+    display: none;
+    list-style: none;
+    position: absolute; 
+    right: 0;
+    width: 200px;
+    text-align: right;
+    padding-right: 15px;
+    padding-top: 20px;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.header__options li{
+    margin-bottom: 10px;
+}
+
+.header__options a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family: 'Roboto';
+}
+
+.header__options a:hover{
+    text-decoration: underline;
+}
+
+/*!!!!!!!! departamentos */
+.departamentos{
+    /* background-color: black; */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.departamentos__container{
+    margin-top: 100px;
+    width: 70%;
+    height: 100%;
+}
+
+.departamentos__title{
+    color: black;
+    font-size: 50px;
+    background-color: rgba(0, 0, 0, 0.1); 
+    border-radius: 20px;
+    text-align: center;
+    font-weight: 300;
+    padding: 10px 0px;
+}
+
+.departamentos__table{
+    margin-top: 20px;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    /* height: 80%; */
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 20px;
+    /* overflow: hidden; */
+    /* border: 1px solid rgba(0, 0, 0, 0.5); */
+    background-color: rgba(0, 0, 0, 0.1);
+    margin-bottom: 50px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.departamentos__table thead th{
+    border-bottom: 2px solid white;
+}
+
+.table__id{
+    width: 10%;
+    border-right: 2px solid white;
+    padding: 10px;
+}
+
+.table__nombre{ 
+    text-align: left;
+    padding-left: 50px;
+}
+
+.table__agregar {
+    border-radius: 10px;
+    background-color: white;
+    text-decoration: none;
+    color: black;
+    padding: 5px 20px;
+}
+
+.table__agregar:hover {
+    opacity: 0.8;
+}
+
+.table__id, .table__nombre{
+    font-size: 25px;
+    font-weight: 400;
+} 
+
+.table__row{
+    height: 50px;
+    text-align: center;
+    /* background-color: pink; */
+    /* border-bottom: 2px solid white; */
+}
+
+.row__nombre{
+    text-align: left;
+    padding-left: 50px;
+}
+
+.row__nombre a{
+    text-decoration: none;
+    color: black;
+}
+
+.row__nombre a:hover{
+    opacity: 0.5;
+}
+
+/* .row__id{
+    border-right: 2px solid white;
+} */
+
+/* .table__row:last-child{
+    border: none;
+} */
+
+.row__edit, .row__delete{
+    width: 20px;
+}
+
+.row__edit:hover, .row__delete:hover{
+    opacity: 0.5;
+    transform: scale(1.1);
+}
+
+.row__delete{
+    margin-right: 10px;
+}
+
+/*!!! Modal */
+/* The Modal (background) */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 200px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%;
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.5); 
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 20px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .close {
+    color: #aaaaaa;
+    font-size: 28px;
+    font-weight: bold;
+    display: flex;
+    align-self: flex-end;
+    width: 40px;
+    margin-bottom: 15px;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  #departamento {
+    font-size: 25px;
+    display: inline;
+    text-align: center;
+}
+
+#btnAceptar{
+    margin-top: 5%;
+    width: 50%;
+    align-self: center;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+#btnAceptar:hover{
+    opacity: 0.7;
+}
+
+/*!! Agregar departamento */
+
+.departamento{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.departamento__container{
+    margin-top: 100px;
+    height: 100%;
+    width: 70%;
+}
+
+.departamento__title{
+    color: black;
+    font-size: 45px;
+    background-color: rgba(0, 0, 0, 0.1); 
+    border-radius: 20px;
+    text-align: center;
+    font-weight: 300;
+    padding: 10px 0px;
+} 
+
+.departamento__form{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.1);
+    height: 50%;
+    margin-top: 20px;
+    border-radius: 20px;
+    padding: 100px 50px;
+}
+
+.departamento__informacion{
+    display: flex;
+    justify-content: center;
+}
+
+.departamento__informacion label{
+    font-size: 25px;
+}
+
+.departamento__informacion input{
+    border-radius: 20px;
+    outline: none;
+    height: 30px;
+    padding: 10px;
+    width: 50%;
+    margin-left: 50px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.departamento__options{
+    display: flex;
+    justify-content: space-between;
+    padding: 10% 30%;
+}
+.departamento__options button, .departamento__options--cancelar{
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+    background-color: white;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+
+.departamento__options button:hover, .departamento__options--cancelar:hover{
+    opacity: 0.8;
+}
+
+#error {
+    align-self: center;
+    width: 50%;
+}
+
+#error li{
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    background-color: #e74c3c;
+    list-style:none;
+}

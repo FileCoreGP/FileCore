@@ -1,0 +1,23 @@
+﻿@model FileCore.Models.Departamento
+@{
+    Layout = "_Layout";
+}
+
+<section class="departamento">
+    <section class="departamento__container">
+        <h2 class="departamento__title">Editar Departamento</h2>
+        <form class="departamento__form" action="~/Administrador/Departamento/Editar" method="post" enctype="multipart/form-data">
+            <section class="departamento__informacion">
+                <label>Nombre:</label>
+                <input asp-for="IdDepartamento" hidden="hidden" />
+                <input asp-for="Nombre" type="text" name="nombre">
+            </section>
+            <section class="departamento__options">
+                <button type="submit">Aceptar</button>
+                <a class="departamento__options--cancelar" href="~/Administrador/Departamento" type="submit">Cancelar</a>
+            </section>
+            <section id="error">@Html.ValidationSummary()</section>
+        </form>
+    </section>
+</section>
+

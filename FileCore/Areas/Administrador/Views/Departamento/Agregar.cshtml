@@ -1,0 +1,21 @@
+﻿@model FileCore.Models.Departamento
+@{
+    Layout = "_Layout";
+}
+
+<section class="departamento">
+    <section class="departamento__container">
+        <h2 class="departamento__title">Agregar Departamento</h2>
+        <form class="departamento__form" action="~/Administrador/Departamento/Agregar" enctype="multipart/form-data" method="post">
+            <section class="departamento__informacion">
+                <label >Nombre:</label>
+                <input asp-for="Nombre" type="text" name="nombre"/>
+            </section>
+            <section class="departamento__options">
+                <button type="submit">Agregar</button>
+                <a class="departamento__options--cancelar" href="~/Administrador/Departamento" type="submit">Cancelar</a>
+            </section>
+            <section id="error">@Html.ValidationSummary()</section>
+        </form>
+    </section>
+</section>

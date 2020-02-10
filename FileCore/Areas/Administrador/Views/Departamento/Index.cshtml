@@ -1,0 +1,92 @@
+﻿@model IEnumerable<FileCore.Models.Departamento>
+@{
+    Layout = "_Layout";
+}
+
+<section class="departamentos">
+    <section class="departamentos__container">
+        <h2 class="departamentos__title">Departamentos</h2>
+
+        <table class="departamentos__table">
+            <thead>
+                <tr>
+                    <th class="table__id">ID</th>
+                    <th class="table__nombre">Nombre</th>
+                    <th><a class="table__agregar" href="~/Administrador/Departamento/Agregar">Agregar</a></th>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+
+                @foreach (var departamento in Model)
+                {
+                    <tr class="table__row">
+                        <td class="row__id">@departamento.IdDepartamento</td>
+                        <td class="row__nombre"><a href="">@departamento.Nombre</a></td>
+                        <td><a href="~/Administrador/Departamento/Editar/@departamento.IdDepartamento"><img class="row__edit" src="~/public/assets/images/edit.png" alt="edit"></a></td>
+                        <td><img onclick="verModal({ id:'@departamento.IdDepartamento', nombre: '@departamento.Nombre'})" class="row__delete delete" src="~/public/assets/images/delete.png" alt="delete"></td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </section>
+</section>
+
+
+
+
+
+
+
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <p id="departamento"></p>
+        <button id="btnAceptar" type="submit">Aceptar</button>
+        <!-- <form id="form" action="/Admin/Departamentos/Eliminar/">
+        </form> -->
+    </div>
+</div>
+
+
+
+<script>
+    let modal = document.getElementById('myModal')
+    let departamentoModal = document.getElementById('departamento')
+    let close = document.getElementsByClassName('close')[0]
+    let btnAceptar = document.getElementById('btnAceptar')
+    // let form = document.getElementById('form')
+
+
+    function verModal(departamento) {
+        departamentoModal.innerText = `¿Estas seguro de dar de baja el ${departamento.nombre}?`
+        modal.style.display = "block"
+        btnAceptar.onclick = function () {
+            window.location.href = `/Administrador/Departamento/Delete/${departamento.id}`
+            //href navega a la direccion indicada sin remover el historial
+            //replace navega a la direccion pero borra el historial
+            // window.location.replace(`/Admin/Departamentos/Eliminar/${departamento.id}`)
+        }
+    }
+    // function verModal(departamento){
+    //     departamentoModal.innerText = departamento.nombre
+    //     modal.style.display = "block"
+    //     btnAceptar.onclick = function(){
+    //         form.action += departamento.id
+    //         form.submit()
+    //     }
+    // }
+
+    close.onclick = function () {
+        modal.style.display = "none"
+    }
+
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none"
+        }
+    }
+</script>
+
+
