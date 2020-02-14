@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FileCore.Repositories
 {
-    public class Repository<T> where T: class
+    public abstract class Repository<T> where T: class
     {
         public filecoreContext Context { get; set; }
 

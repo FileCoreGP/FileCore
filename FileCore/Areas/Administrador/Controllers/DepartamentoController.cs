@@ -13,8 +13,8 @@ namespace FileCore.Areas.Administrador.Controllers
     {
         public IActionResult Index()
         {
-            DepartamentosRepository repos = new DepartamentosRepository();
-            return View(repos.GetAll());
+            DepartamentoRepository repos = new DepartamentoRepository();
+            return View(repos.GetDepartamentosViewModel());
         }
 
         public IActionResult Agregar()
@@ -23,7 +23,7 @@ namespace FileCore.Areas.Administrador.Controllers
         }
 
         [HttpPost]
-        public IActionResult Agregar(Departamento departamento)
+        public IActionResult Agregar(DepartamentoViewModel departamento)
         {
             if (departamento != null && ModelState.IsValid)
             {
@@ -33,10 +33,17 @@ namespace FileCore.Areas.Administrador.Controllers
                     return View(departamento);
                 }
 
+                if (departamento.Nombre.Length > 80)
+                {
+                    ModelState.AddModelError("Error", "El nombre solo puede contener 80 caracteres como maximo");
+                    return View(departamento);
+                }
+
                 try
                 {
-                    DepartamentosRepository repos = new DepartamentosRepository();
+                    DepartamentoRepository repos = new DepartamentoRepository();
                     repos.InsertDepartamento(departamento);
+                    return RedirectToAction("Index", "Administrador");
                 }
                 catch (Exception ex)
                 {
@@ -45,35 +52,42 @@ namespace FileCore.Areas.Administrador.Controllers
                 }
             }
 
-            return RedirectToAction("Index","Administrador");
+            return View(departamento);
         }
 
-        public IActionResult Editar(int Id) 
+        public IActionResult Editar(int Id)
         {
-            DepartamentosRepository repos = new DepartamentosRepository();
-            var departamaento = repos.GetById(Id);
+            DepartamentoRepository repos = new DepartamentoRepository();
+            var departamento = repos.GetDepartamentoById(Id);
 
-            if (departamaento != null)
-                return View(departamaento);
-
-            return RedirectToAction("Index","Administrador");
+            if (departamento != null)
+                return View(departamento);
+            else
+            return RedirectToAction("Index", "Administrador");
         }
 
         [HttpPost]
-        public IActionResult Editar(Departamento departamento)
+        public IActionResult Editar(DepartamentoViewModel departamento)
         {
             if (departamento != null && ModelState.IsValid)
             {
-                if (string.IsNullOrEmpty(departamento.Nombre))
+                if (string.IsNullOrWhiteSpace(departamento.Nombre))
                 {
-                    ModelState.AddModelError("Error","El nombre no debe estar vacio.");
+                    ModelState.AddModelError("Error", "El nombre no debe estar vacio.");
+                    return View(departamento);
+                }
+
+                if (departamento.Nombre.Length > 80)
+                {
+                    ModelState.AddModelError("Error", "El nombre solo puede contener 80 caracteres como maximo");
                     return View(departamento);
                 }
 
                 try
                 {
-                    DepartamentosRepository repos = new DepartamentosRepository();
+                    DepartamentoRepository repos = new DepartamentoRepository();
                     repos.UpdateDepartamento(departamento);
+                    return RedirectToAction("Index", "Administrador");
                 }
                 catch (Exception ex)
                 {
@@ -81,19 +95,19 @@ namespace FileCore.Areas.Administrador.Controllers
                     return View(departamento);
                 }
             }
-            return RedirectToAction("Index","Administrador");
+            return View(departamento);
         }
 
 
         public IActionResult Delete(int Id)
         {
-            DepartamentosRepository repos = new DepartamentosRepository();
-            var departamento = repos.GetById(Id);
+            DepartamentoRepository repos = new DepartamentoRepository();
+            var Vdepartamento = repos.GetById(Id);
 
-            if (departamento != null)
-                repos.Delete(departamento);
-
-            return RedirectToAction("Index","Administrador");
+            if (Vdepartamento != null)
+                repos.Delete(Vdepartamento);
+            
+            return RedirectToAction("Index", "Administrador");
         }
     }
 }

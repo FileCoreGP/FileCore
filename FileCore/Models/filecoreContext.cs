@@ -33,7 +33,7 @@ namespace FileCore.Models
             if (!optionsBuilder.IsConfigured)
             {
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
-                optionsBuilder.UseMySql("server=localhost; user id=root; database=filecore; password=root;");
+                optionsBuilder.UseMySql("server=localhost; user id=root; password=root; database=filecore;");
             }
         }
 
@@ -78,7 +78,7 @@ namespace FileCore.Models
 
                 entity.Property(e => e.Nombre)
                     .IsRequired()
-                    .HasColumnType("varchar(6)");
+                    .HasColumnType("varchar(20)");
             });
 
             modelBuilder.Entity<Datospariente>(entity =>

@@ -26,3 +26,62 @@ C:\Users\Carlos Salas\Desktop\FileCore\FileCore\obj\Debug\netcoreapp2.1\Razor\Ar
 C:\Users\Carlos Salas\Desktop\FileCore\FileCore\obj\Debug\netcoreapp2.1\Razor\Areas\Administrador\Views\Departamento\Agregar.cshtml.g.cs
 C:\Users\Carlos Salas\Desktop\FileCore\FileCore\obj\Debug\netcoreapp2.1\Razor\Areas\Administrador\Views\_ViewImports.cshtml.g.cs
 C:\Users\Carlos Salas\Desktop\FileCore\FileCore\obj\Debug\netcoreapp2.1\Razor\Areas\Administrador\Views\Departamento\Editar.cshtml.g.cs
+C:\Users\patty\Desktop\FileCore-master\FileCore\bin\Debug\netcoreapp2.1\FileCore.deps.json
+C:\Users\patty\Desktop\FileCore-master\FileCore\bin\Debug\netcoreapp2.1\FileCore.runtimeconfig.json
+C:\Users\patty\Desktop\FileCore-master\FileCore\bin\Debug\netcoreapp2.1\FileCore.runtimeconfig.dev.json
+C:\Users\patty\Desktop\FileCore-master\FileCore\bin\Debug\netcoreapp2.1\FileCore.dll
+C:\Users\patty\Desktop\FileCore-master\FileCore\bin\Debug\netcoreapp2.1\FileCore.pdb
+C:\Users\patty\Desktop\FileCore-master\FileCore\bin\Debug\netcoreapp2.1\FileCore.Views.dll
+C:\Users\patty\Desktop\FileCore-master\FileCore\bin\Debug\netcoreapp2.1\FileCore.Views.pdb
+C:\Users\patty\Desktop\FileCore-master\FileCore\obj\Debug\netcoreapp2.1\FileCore.csprojAssemblyReference.cache
+C:\Users\patty\Desktop\FileCore-master\FileCore\obj\Debug\netcoreapp2.1\FileCore.csproj.CoreCompileInputs.cache
+C:\Users\patty\Desktop\FileCore-master\FileCore\obj\Debug\netcoreapp2.1\FileCore.RazorAssemblyInfo.cache
+C:\Users\patty\Desktop\FileCore-master\FileCore\obj\Debug\netcoreapp2.1\FileCore.RazorAssemblyInfo.cs
+C:\Users\patty\Desktop\FileCore-master\FileCore\obj\Debug\netcoreapp2.1\FileCore.AssemblyInfoInputs.cache
+C:\Users\patty\Desktop\FileCore-master\FileCore\obj\Debug\netcoreapp2.1\FileCore.AssemblyInfo.cs
+C:\Users\patty\Desktop\FileCore-master\FileCore\obj\Debug\netcoreapp2.1\FileCore.TagHelpers.input.cache
+C:\Users\patty\Desktop\FileCore-master\FileCore\obj\Debug\netcoreapp2.1\FileCore.TagHelpers.output.cache
+C:\Users\patty\Desktop\FileCore-master\FileCore\obj\Debug\netcoreapp2.1\FileCore.RazorCoreGenerate.cache
+C:\Users\patty\Desktop\FileCore-master\FileCore\obj\Debug\netcoreapp2.1\Razor\Areas\Administrador\Views\Departamento\Agregar.g.cshtml.cs
+C:\Users\patty\Desktop\FileCore-master\FileCore\obj\Debug\netcoreapp2.1\Razor\Areas\Administrador\Views\Departamento\Editar.g.cshtml.cs
+C:\Users\patty\Desktop\FileCore-master\FileCore\obj\Debug\netcoreapp2.1\Razor\Areas\Administrador\Views\Departamento\Index.g.cshtml.cs
+C:\Users\patty\Desktop\FileCore-master\FileCore\obj\Debug\netcoreapp2.1\Razor\Areas\Administrador\Views\Home\Index.g.cshtml.cs
+C:\Users\patty\Desktop\FileCore-master\FileCore\obj\Debug\netcoreapp2.1\Razor\Areas\Administrador\Views\_ViewImports.g.cshtml.cs
+C:\Users\patty\Desktop\FileCore-master\FileCore\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.g.cshtml.cs
+C:\Users\patty\Desktop\FileCore-master\FileCore\obj\Debug\netcoreapp2.1\FileCore.RazorTargetAssemblyInfo.cache
+C:\Users\patty\Desktop\FileCore-master\FileCore\obj\Debug\netcoreapp2.1\FileCore.RazorTargetAssemblyInfo.cs
+C:\Users\patty\Desktop\FileCore-master\FileCore\obj\Debug\netcoreapp2.1\FileCore.Views.pdb
+C:\Users\patty\Desktop\FileCore-master\FileCore\obj\Debug\netcoreapp2.1\FileCore.dll
+C:\Users\patty\Desktop\FileCore-master\FileCore\obj\Debug\netcoreapp2.1\FileCore.pdb
+C:\Users\patty\Desktop\FileCore-master\FileCore\obj\Debug\netcoreapp2.1\FileCore.csproj.CopyComplete
+C:\Users\Carlos Salas\Desktop\FileCore - Branch\FileCore-master\FileCore\bin\Debug\netcoreapp2.1\Properties\launchSettings.json
+C:\Users\Carlos Salas\Desktop\FileCore - Branch\FileCore-master\FileCore\bin\Debug\netcoreapp2.1\FileCore.deps.json
+C:\Users\Carlos Salas\Desktop\FileCore - Branch\FileCore-master\FileCore\bin\Debug\netcoreapp2.1\FileCore.runtimeconfig.json
+C:\Users\Carlos Salas\Desktop\FileCore - Branch\FileCore-master\FileCore\bin\Debug\netcoreapp2.1\FileCore.runtimeconfig.dev.json
+C:\Users\Carlos Salas\Desktop\FileCore - Branch\FileCore-master\FileCore\bin\Debug\netcoreapp2.1\FileCore.dll
+C:\Users\Carlos Salas\Desktop\FileCore - Branch\FileCore-master\FileCore\bin\Debug\netcoreapp2.1\FileCore.pdb
+C:\Users\Carlos Salas\Desktop\FileCore - Branch\FileCore-master\FileCore\bin\Debug\netcoreapp2.1\FileCore.Views.dll
+C:\Users\Carlos Salas\Desktop\FileCore - Branch\FileCore-master\FileCore\bin\Debug\netcoreapp2.1\FileCore.Views.pdb
+C:\Users\Carlos Salas\Desktop\FileCore - Branch\FileCore-master\FileCore\obj\Debug\netcoreapp2.1\FileCore.csprojAssemblyReference.cache
+C:\Users\Carlos Salas\Desktop\FileCore - Branch\FileCore-master\FileCore\obj\Debug\netcoreapp2.1\FileCore.RazorAssemblyInfo.cache
+C:\Users\Carlos Salas\Desktop\FileCore - Branch\FileCore-master\FileCore\obj\Debug\netcoreapp2.1\FileCore.RazorAssemblyInfo.cs
+C:\Users\Carlos Salas\Desktop\FileCore - Branch\FileCore-master\FileCore\obj\Debug\netcoreapp2.1\FileCore.AssemblyInfoInputs.cache
+C:\Users\Carlos Salas\Desktop\FileCore - Branch\FileCore-master\FileCore\obj\Debug\netcoreapp2.1\FileCore.AssemblyInfo.cs
+C:\Users\Carlos Salas\Desktop\FileCore - Branch\FileCore-master\FileCore\obj\Debug\netcoreapp2.1\FileCore.TagHelpers.input.cache
+C:\Users\Carlos Salas\Desktop\FileCore - Branch\FileCore-master\FileCore\obj\Debug\netcoreapp2.1\FileCore.TagHelpers.output.cache
+C:\Users\Carlos Salas\Desktop\FileCore - Branch\FileCore-master\FileCore\obj\Debug\netcoreapp2.1\FileCore.RazorCoreGenerate.cache
+C:\Users\Carlos Salas\Desktop\FileCore - Branch\FileCore-master\FileCore\obj\Debug\netcoreapp2.1\Razor\Areas\Administrador\Views\Departamento\Agregar.cshtml.g.cs
+C:\Users\Carlos Salas\Desktop\FileCore - Branch\FileCore-master\FileCore\obj\Debug\netcoreapp2.1\Razor\Areas\Administrador\Views\Departamento\Editar.cshtml.g.cs
+C:\Users\Carlos Salas\Desktop\FileCore - Branch\FileCore-master\FileCore\obj\Debug\netcoreapp2.1\Razor\Areas\Administrador\Views\Departamento\Index.cshtml.g.cs
+C:\Users\Carlos Salas\Desktop\FileCore - Branch\FileCore-master\FileCore\obj\Debug\netcoreapp2.1\Razor\Areas\Administrador\Views\Home\Index.cshtml.g.cs
+C:\Users\Carlos Salas\Desktop\FileCore - Branch\FileCore-master\FileCore\obj\Debug\netcoreapp2.1\Razor\Areas\Administrador\Views\_ViewImports.cshtml.g.cs
+C:\Users\Carlos Salas\Desktop\FileCore - Branch\FileCore-master\FileCore\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\Carlos Salas\Desktop\FileCore - Branch\FileCore-master\FileCore\obj\Debug\netcoreapp2.1\FileCore.RazorTargetAssemblyInfo.cache
+C:\Users\Carlos Salas\Desktop\FileCore - Branch\FileCore-master\FileCore\obj\Debug\netcoreapp2.1\FileCore.RazorTargetAssemblyInfo.cs
+C:\Users\Carlos Salas\Desktop\FileCore - Branch\FileCore-master\FileCore\obj\Debug\netcoreapp2.1\FileCore.Views.pdb
+C:\Users\Carlos Salas\Desktop\FileCore - Branch\FileCore-master\FileCore\obj\Debug\netcoreapp2.1\FileCore.dll
+C:\Users\Carlos Salas\Desktop\FileCore - Branch\FileCore-master\FileCore\obj\Debug\netcoreapp2.1\FileCore.pdb
+C:\Users\Carlos Salas\Desktop\FileCore - Branch\FileCore-master\FileCore\obj\Debug\netcoreapp2.1\FileCore.csproj.CopyComplete
+C:\Users\Carlos Salas\Desktop\FileCore - Branch\FileCore-master\FileCore\obj\Debug\netcoreapp2.1\Razor\Areas\Administrador\Views\Categoria\Index.cshtml.g.cs
+C:\Users\Carlos Salas\Desktop\FileCore - Branch\FileCore-master\FileCore\obj\Debug\netcoreapp2.1\Razor\Areas\Administrador\Views\Categoria\Agregar.cshtml.g.cs
+C:\Users\Carlos Salas\Desktop\FileCore - Branch\FileCore-master\FileCore\obj\Debug\netcoreapp2.1\Razor\Areas\Administrador\Views\Categoria\Editar.cshtml.g.cs

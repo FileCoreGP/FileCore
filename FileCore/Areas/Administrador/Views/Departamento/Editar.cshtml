@@ -1,4 +1,4 @@
-﻿@model FileCore.Models.Departamento
+﻿@model FileCore.Models.DepartamentoViewModel
 @{
     Layout = "_Layout";
 }
@@ -8,9 +8,9 @@
         <h2 class="departamento__title">Editar Departamento</h2>
         <form class="departamento__form" action="~/Administrador/Departamento/Editar" method="post" enctype="multipart/form-data">
             <section class="departamento__informacion">
+                <input id="id" asp-for="IdDepartamento"  hidden="hidden" />
                 <label>Nombre:</label>
-                <input asp-for="IdDepartamento" hidden="hidden" />
-                <input asp-for="Nombre" type="text" name="nombre">
+                <input asp-for="Nombre" type="text" name="Nombre">
             </section>
             <section class="departamento__options">
                 <button type="submit">Aceptar</button>

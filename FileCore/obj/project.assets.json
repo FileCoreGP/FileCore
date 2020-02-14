@@ -12627,11 +12627,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Carlos Salas\\Desktop\\FileCore\\FileCore\\FileCore.csproj",
+      "projectUniqueName": "C:\\Users\\Carlos Salas\\Desktop\\FileCore - Branch\\FileCore-master\\FileCore\\FileCore.csproj",
       "projectName": "FileCore",
-      "projectPath": "C:\\Users\\Carlos Salas\\Desktop\\FileCore\\FileCore\\FileCore.csproj",
+      "projectPath": "C:\\Users\\Carlos Salas\\Desktop\\FileCore - Branch\\FileCore-master\\FileCore\\FileCore.csproj",
       "packagesPath": "C:\\Users\\Carlos Salas\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Carlos Salas\\Desktop\\FileCore\\FileCore\\obj\\",
+      "outputPath": "C:\\Users\\Carlos Salas\\Desktop\\FileCore - Branch\\FileCore-master\\FileCore\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",

@@ -66,45 +66,41 @@ body{
     text-decoration: underline;
 }
 
-/*!!!!!!!! departamentos */
-.departamentos{
-    /* background-color: black; */
+/*!!!!!!!! departamentos, categorias */
+.departamentos, .categorias {
     height: 100vh;
     display: flex;
     justify-content: center;
 }
 
-.departamentos__container{
+.departamentos__container, .categorias__container {
     margin-top: 100px;
     width: 70%;
     height: 100%;
 }
 
-.departamentos__title{
+.departamentos__title, .categorias__title {
     color: black;
     font-size: 50px;
-    background-color: rgba(0, 0, 0, 0.1); 
+    background-color: rgba(0, 0, 0, 0.1);
     border-radius: 20px;
     text-align: center;
     font-weight: 300;
     padding: 10px 0px;
 }
 
-.departamentos__table{
+.departamentos__table, .categorias__table {
     margin-top: 20px;
-    /* background-color: rgba(0, 0, 0, 0.5); */
-    /* height: 80%; */
     width: 100%;
     border-collapse: collapse;
     border-radius: 20px;
-    /* overflow: hidden; */
-    /* border: 1px solid rgba(0, 0, 0, 0.5); */
     background-color: rgba(0, 0, 0, 0.1);
     margin-bottom: 50px;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
 }
 
-.departamentos__table thead th{
+.departamentos__table thead th, .categorias__table thead th{
     border-bottom: 2px solid white;
 }
 
@@ -117,6 +113,18 @@ body{
 .table__nombre{ 
     text-align: left;
     padding-left: 50px;
+    width: 75%;
+}
+
+.categorias__table .table__nombre {
+    width: 30%;
+}
+
+.table__descripcion {
+    text-align: left;
+    border-left: 2px solid white;
+    padding-left: 50px;
+    width: 45%;
 }
 
 .table__agregar {
@@ -125,6 +133,14 @@ body{
     text-decoration: none;
     color: black;
     padding: 5px 20px;
+    position: absolute;
+    right: 15px;
+    top: 5px;
+}
+
+.table__id, .table__nombre, .table__agregar, .table__descripcion {
+    font-size: 25px;
+    font-weight: 400;
 }
 
 .table__agregar:hover {
@@ -134,13 +150,11 @@ body{
 .table__id, .table__nombre{
     font-size: 25px;
     font-weight: 400;
-} 
+}
 
-.table__row{
+.table__row {
     height: 50px;
     text-align: center;
-    /* background-color: pink; */
-    /* border-bottom: 2px solid white; */
 }
 
 .row__nombre{
@@ -148,22 +162,22 @@ body{
     padding-left: 50px;
 }
 
-.row__nombre a{
+.row__nombre{
+    text-decoration: none;
+    color: black;
+    word-wrap: break-word;
+}
+
+.row__descripcion {
+    text-align: left;
+    padding-left: 50px;
+    word-wrap: break-word;
+}
+
+.row__descripcion a {
     text-decoration: none;
     color: black;
 }
-
-.row__nombre a:hover{
-    opacity: 0.5;
-}
-
-/* .row__id{
-    border-right: 2px solid white;
-} */
-
-/* .table__row:last-child{
-    border: none;
-} */
 
 .row__edit, .row__delete{
     width: 20px;
@@ -221,10 +235,11 @@ body{
     cursor: pointer;
   }
 
-  #departamento {
+#departamento, #categoria {
     font-size: 25px;
     display: inline;
     text-align: center;
+    word-wrap: break-word;
 }
 
 #btnAceptar{
@@ -264,13 +279,13 @@ body{
     text-align: center;
     font-weight: 300;
     padding: 10px 0px;
-} 
+}
 
-.departamento__form{
+.departamento__form {
     display: flex;
     flex-direction: column;
     background-color: rgba(0, 0, 0, 0.1);
-    height: 50%;
+    height: 62%;
     margin-top: 20px;
     border-radius: 20px;
     padding: 100px 50px;
@@ -317,7 +332,7 @@ body{
 
 #error {
     align-self: center;
-    width: 50%;
+    width: 50%; 
 }
 
 #error li{
@@ -328,4 +343,104 @@ body{
     font-size: 20px;
     background-color: #e74c3c;
     list-style:none;
+}
+
+
+
+/*!! Editar categoria */
+
+.categoria {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.categoria__container {
+    margin-top: 100px;
+    height: 100%;
+    width: 70%;
+}
+
+.categoria__title {
+    color: black;
+    font-size: 45px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    text-align: center;
+    font-weight: 300;
+    padding: 10px 0px;
+}
+
+.categoria__form {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.1);
+    height: 80%;
+    margin-top: 20px;
+    border-radius: 20px;
+    padding: 50px 50px;
+}
+
+.categoria__informacion {
+    display: flex;
+    flex-direction: column;
+}
+
+.informacion__nombre, .informacion__descripcion {
+    display: flex;
+    justify-content: center;
+}
+
+.informacion__descripcion {
+    margin-top: 6%;
+}
+
+.informacion__descripcion textarea {
+font-family: 'Roboto';
+font-size: 16px;
+border-radius: 20px;
+outline: none;
+height: 100px;
+resize: none;
+padding: 15px;
+width: 50%;
+margin-left: 20px;
+border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+
+.categoria__informacion label {
+    font-size: 25px;
+}
+
+.categoria__informacion input {
+    font-size: 16px;
+    border-radius: 20px;
+    outline: none;
+    height: 30px;
+    padding: 20px;
+    width: 50%;
+    margin-left: 50px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.categoria__options {
+    display: flex;
+    justify-content: space-between;
+    padding: 10% 30%;
+}
+
+.categoria__options button, .categoria__options--cancelar {
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+    background-color: white;
+    cursor: pointer;
+    color: black;
+    text-decoration: none;
+}
+
+.categoria__options button:hover, .categoria__options--cancelar:hover {
+    opacity: 0.8;
 }
