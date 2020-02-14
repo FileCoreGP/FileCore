@@ -1,0 +1,29 @@
+﻿@model FileCore.Models.CategoriaViewModel
+@{
+    Layout = "_Layout";
+}
+
+<section class="categoria">
+    <section class="categoria__container">
+        <h2 class="categoria__title">Agregar Categoria</h2>
+        <form class="categoria__form" method="post" action="~/Administrador/Categoria/Agregar" enctype="multipart/form-data">
+            <section class="categoria__informacion">
+                <div class="informacion__nombre">
+                    <label for="nombre">Nombre:</label>
+                    <input asp-for="Nombre" type="text" />
+                </div>
+
+                <div class="informacion__descripcion">
+                    <label for="Descripción">Descripción:</label>
+                    <textarea asp-for="Descripcion"></textarea>
+                </div>
+            </section>
+            <section class="categoria__options">
+                <button type="submit">Aceptar</button>
+                <a class="categoria__options--cancelar" type="submit" href="~/Administrador/Categoria/Index">Cancelar</a>
+            </section>
+            <section id="error">@Html.ValidationSummary()</section>
+        </form>
+    </section>
+</section>
+

@@ -1,0 +1,71 @@
+﻿@model IEnumerable<FileCore.Models.CategoriaViewModel>
+
+@{
+    Layout = "_Layout";
+}
+
+<section class="categorias">
+    <section class="categorias__container">
+        <h2 class="categorias__title">Categorias</h2>
+
+        <table class="categorias__table">
+            <thead>
+                <tr>
+                    <th class="table__id">ID</th>
+                    <th class="table__nombre">Nombre</th>
+                    <th class="table__descripcion">Descripción</th>
+                    <th><a class="table__agregar" href="~/Administrador/Categoria/Agregar">Agregar</a></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var categoria in Model)
+                {
+                    <tr class="table__row">
+                        <td class="row__id">@categoria.IdCategoria</td>
+                        <td class="row__nombre">@categoria.Nombre</td>
+                        <td class="row__descripcion">@categoria.Descripcion</td>
+                        <td><a href="~/Administrador/Categoria/Editar/@categoria.IdCategoria"><img class="row__edit" src="~/public/assets/images/edit.png" alt=""></a></td>
+                        <td><img onclick="verModal({ id: '@categoria.IdCategoria', nombre: '@categoria.Nombre'})" class="row__delete delete" src="~/public/assets/images/delete.png" alt=""></td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </section>
+</section>
+
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <p id="categoria"></p>
+        <button id="btnAceptar" type="submit">Aceptar</button>
+    </div>
+</div>
+
+
+
+<script>
+        let modal = document.getElementById('myModal')
+        let categoriaModal = document.getElementById('categoria')
+        let close = document.getElementsByClassName('close')[0]
+        let btnAceptar = document.getElementById('btnAceptar')
+
+        function verModal(categoria){
+            categoriaModal.innerText = `¿Estas seguro de dar de baja la categoria ${categoria.nombre}?`
+            modal.style.display = "block"
+            btnAceptar.onclick = function(){
+                window.location.href = `/Administrador/Categoria/Delete/${categoria.id}`
+            }
+        }
+
+        close.onclick = function(){
+            modal.style.display = "none"
+        }
+
+        window.onclick = function(event){
+            if(event.target == modal){
+                modal.style.display = "none"
+            }
+        }
+</script>
+
